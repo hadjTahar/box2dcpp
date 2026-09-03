@@ -1,5 +1,5 @@
-#include "body.h"
-#include "world.h"
+#include <box2cpp/body.h>
+#include <box2cpp/world.h>
 #include <box2d/box2d.h>
 
 

@@ -1,6 +1,5 @@
-#include "world.h"
+#include <box2cpp/world.h>
 #include <box2d/box2d.h>
-#include <misc/debug.h>
 
 
 namespace Qx::Box2D {

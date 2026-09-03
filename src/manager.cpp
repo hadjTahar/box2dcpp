@@ -1,4 +1,4 @@
-#include "manager.h"
+#include <box2cpp/manager.h>
 #include <box2d/box2d.h>
 
 namespace Qx::Box2D {
