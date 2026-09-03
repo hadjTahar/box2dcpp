@@ -1,5 +1,5 @@
-#include <box2cpp/body.h>
-#include <box2cpp/world.h>
+#include <box2dcpp/body.h>
+#include <box2dcpp/world.h>
 #include <box2d/box2d.h>
 
 
@@ -37,15 +37,26 @@ void Body::setPosition(const b2Pos &pos)
     b2Body_SetTransform( m_id, pos, b2Body_GetRotation( m_id ) );
 }
 
+b2Pos Body::position() const
+{
+    return b2Body_GetPosition(m_id);
+}
+
 void Body::setLinearVelocity(const b2Pos &vel)
 {
     b2Body_SetLinearVelocity( m_id, vel );
+}
+
+b2Pos Body::linearVelocity() const
+{
+    return b2Body_GetLinearVelocity(m_id);
 }
 
 void Body::setType(b2BodyType tp)
 {
     b2Body_SetType( m_id, tp );
 }
+
 
 }
 

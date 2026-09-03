@@ -23,8 +23,13 @@ public:
 
     Shape *addShape( const Polygon &polygon );
     Shape *addShape( const Circle &circle );
-    void setPosition( const b2Pos &pos);
+
+    void  setPosition( const b2Pos &pos);
+    b2Pos position() const;
+
     void setLinearVelocity( const b2Pos &vel );
+    b2Pos linearVelocity() const;
+
     void setType( b2BodyType tp );
 
 

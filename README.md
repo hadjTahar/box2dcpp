@@ -5,7 +5,7 @@ C++ Abstraction layer over Box2D
 ### ToDo:
 
 - Add multi-threading
-- Abstract vectors
+- Abstract math vectors
 - Abstract enums
 - Add:
 	- World
@@ -18,4 +18,5 @@ C++ Abstraction layer over Box2D
 
 ### Memory management
 
-- Each type is responsible for destroying what it added, Eg: World destroys added bodies
+- Each type is responsible for destroying what it added.
+Eg: World destroys added bodies

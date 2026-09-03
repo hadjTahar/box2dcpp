@@ -1,5 +1,5 @@
-#include <box2cpp/shape.h>
-#include <box2cpp/body.h>
+#include <box2dcpp/shape.h>
+#include <box2dcpp/body.h>
 
 #include <box2d/box2d.h>
 

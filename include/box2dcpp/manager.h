@@ -8,9 +8,9 @@ namespace Qx::Box2D {
 
 class Manager
 {
-    friend class PhysicsComponent;
 public:
     World *createWorld();
+    void step(float dltMs , int subStepCount);
 
 protected:
     std::vector<World> m_worlds;
