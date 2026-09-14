@@ -52,9 +52,9 @@ b2Pos Body::linearVelocity() const
     return b2Body_GetLinearVelocity(m_id);
 }
 
-void Body::setType(b2BodyType tp)
+void Body::setType(BodyType tp)
 {
-    b2Body_SetType( m_id, tp );
+    b2Body_SetType( m_id, static_cast<b2BodyType>(tp) );
 }
 
 

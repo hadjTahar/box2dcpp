@@ -30,7 +30,7 @@ public:
     void setLinearVelocity( const b2Pos &vel );
     b2Pos linearVelocity() const;
 
-    void setType( b2BodyType tp );
+    void setType(BodyType tp );
 
 
 

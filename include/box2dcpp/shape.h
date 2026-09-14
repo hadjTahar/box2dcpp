@@ -26,7 +26,8 @@ public:
           const Qx::Box2D::Circle  &circle);
     Shape(private_ctor_t){}
 
-    void setShapeDensity( float density, bool updateBodyMass);
+    void setDensity( float density, bool updateBodyMass);
+    void setRestitution( float restitution);
 
 
 private:

@@ -13,7 +13,13 @@ namespace Qx::Box2D {
 using Polygon = b2Polygon;
 using Circle  = b2Circle;
 
+enum class BodyType
+{
+    Static    = b2_staticBody,
+    Kinematic = b2_kinematicBody,
+    Dynamic   = b2_dynamicBody,
 
+};
 
 /// ## Functions
 /// ## ----------------------------------------------------

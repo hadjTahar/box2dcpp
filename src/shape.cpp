@@ -23,10 +23,15 @@ Shape::Shape(private_ctor_t,
     m_shapeId       = b2CreateCircleShape( body.m_id, &shapeOpts, &circle );
 }
 
-
-void Shape::setShapeDensity(float density, bool updateBodyMass)
+void Shape::setDensity(float density, bool updateBodyMass)
 {
     b2Shape_SetDensity( m_shapeId, density, updateBodyMass );
+}
+
+
+void Shape::setRestitution(float restitution)
+{
+    b2Shape_SetRestitution( m_shapeId, restitution );
 }
 
 }
