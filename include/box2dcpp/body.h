@@ -31,6 +31,7 @@ public:
     b2Pos linearVelocity() const;
 
     void setType(BodyType tp );
+    BodyType type() const;
 
 
 

@@ -2,6 +2,8 @@
 #include <box2dcpp/world.h>
 #include <box2d/box2d.h>
 
+#include <iostream>
+
 
 namespace Qx::Box2D {
 
@@ -55,6 +57,11 @@ b2Pos Body::linearVelocity() const
 void Body::setType(BodyType tp)
 {
     b2Body_SetType( m_id, static_cast<b2BodyType>(tp) );
+}
+
+BodyType Body::type() const
+{
+    return static_cast<BodyType>( b2Body_GetType( m_id ) );
 }
 
 
